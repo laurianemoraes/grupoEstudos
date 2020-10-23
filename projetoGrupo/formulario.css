@@ -1,0 +1,119 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ebf0f6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /*retira as barras de rolagem*/
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.article {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  position: static;
+}
+.section-title h2 {
+  margin: 20px 0 30px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+
+  color: #1c2b2d;
+}
+.contact:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.7);
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .php-email-form {
+  width: 9 00px;
+  height: 600px;
+  background: #ebf0f6;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid #dae1e7 1px;
+  border-radius: 0.4rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 20px 30px 0px rgba(68, 88, 144, 0.2);
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 40px;
+  margin: 0px 200px 0px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 3px 25px 0px rgba(68, 88, 144, 0.2);
+  font-size: 14px;
+}
+
+.contact .php-email-form input {
+  height: 40px;
+  width: 380px;
+}
+
+.col {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.col button {
+  border: 0;
+  padding: 10px 32px;
+  color: #00a8cc;
+  transition: 0.4s;
+  border-radius: 50px;
+  border: 2px solid #00a8cc;
+  background: #fff;
+  margin: 0px 90px 0px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.col button:hover {
+  background: #00a8cc;
+  color: #fff;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
