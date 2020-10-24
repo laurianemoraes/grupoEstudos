@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: left;
+  line-height: 1.428571429;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem "Fredoka One", cursive;
+}
+
+#container {
+  background-color: #d9b7c8;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+}
+
+#canva {
+  background-color: #ffffff;
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /*posiciona o elemento filho ao meio*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -30%;
+}
+
+.flex-column {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-column h1 {
+  color: #142850;
+  font-size: 4.5rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.pet-list li {
+  background-color: #ffffff;
+  max-width: 300px;
+  height: 48%;
+  margin: 8px;
+  padding-left: 0;
+  padding-right: 0;
+  vertical-align: top;
+  border-radius: 50px;
+  position: relative;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding-right: 0px;
+  padding-left: 5px;
+  /*height: 279px;
+  display: inline-block;
+  width: 25%;
+  float: left;
+  margin: 0.5em;*/
+}
+
+ul {
+  list-style-type: disc;
+}
+
+li {
+  display: list-item;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 45%;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+.buttons a {
+  width: 15rem;
+  border-radius: 0.8rem;
+  margin-right: 1.6rem;
+
+  font: 700 2rem "Roboto", sans-serif;
+
+  display: flex;
+  align-items: right;
+  justify-content: right;
+
+  text-decoration: none;
+
+  transition: background 0.2s;
+
+  color: #142850;
+}
+
+.logo-container img {
+  height: 2rem;
+  margin: 2.5rem 2.5rem 0.2rem;
+}
+
+.logo-container {
+  text-align: left;
+}
+.logo-container h2 {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 4.6rem;
+  margin-left: 2.5rem;
+  color: #142850;
+}
+
+.hero-image {
+  width: 85%;
+  height: 89.5%;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin: 3.2rem 0;
+}
+
+.buttons-container a {
+  width: 15rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+  margin-right: 1.6rem;
+
+  font: 700 2.4rem "Roboto", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  transition: background 0.2s;
+
+  color: #142850;
+}
+
+.buttons-container a.study {
+  background: var(--color-primary-lighter);
+}
+
+.buttons-container a.study:hover {
+  background: var(--color-primary-light);
+}
+
+.buttons-container a.give-classes {
+  background: var(--color-secondary);
+  margin-right: 0;
+}
+
+.buttons-container a.give-classes:hover {
+  background: var(--color-secondary-dark);
+}
+
+@media (max-width: 699px) {
+  :root {
+    font-size: 35%; /* modificar as medidas em rem */
+    width: 100%;
+  }
+  #canva {
+    margin-top: 25%;
+  }
+  .hero-image {
+    width: 80%;
+    height: 84.1%;
+  }
+}
+
+@media (min-width: 1320px) {
+  #page-landing #container {
+    max-width: 100%;
+    height: 408px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 180px 1fr 1fr;
+    grid-template-areas:
+      "adote image buttons"
+      "texting blank blank"
+      "button blank blank";
+    column-gap: 87px;
+    row-gap: 55px;
+  }
+
+  #canva {
+    margin-top: 10%;
+  }
+  .buttons {
+    grid-area: buttons;
+    margin: 1.5rem 0;
+    height: 20px;
+  }
+
+  .buttons a {
+    font: 700 2.5rem "Roboto", sans-serif;
+    width: 18rem;
+  }
+
+  .logo-container {
+    grid-area: adote;
+    text-align: center;
+    align-self: flex-end;
+    margin: 0;
+  }
+
+  .logo-container img {
+    height: 70px;
+  }
+  .hero-image {
+    grid-area: image;
+    width: 612px;
+    height: 408px;
+    margin: 0;
+  }
+
+  .buttons-container {
+    grid-area: button;
+    margin: 0;
+    text-align: center;
+    align-self: flex-start;
+  }
+
+  .pet-list li {
+    background-color: #ffffff;
+    max-width: 200px;
+    height: 48%;
+    margin: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    vertical-align: top;
+    border-radius: 50px;
+    position: relative;
+  }
+}
