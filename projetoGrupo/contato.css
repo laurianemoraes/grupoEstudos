@@ -26,8 +26,8 @@ body {
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
-  font: 500 2rem "Fredoka One", cursive;
   color: #142850;
+  font: 500 2rem "Fredoka One", cursive;
 }
 
 .contact:before {
@@ -44,35 +44,44 @@ body {
   margin-top: 40px;
 }
 
-.contact .php-email-form {
+.contact form {
   width: 900px;
   height: 600px;
   background: #ebf0f6;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
   border: solid #dae1e7 1px;
   border-radius: 0.4rem;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 20px 30px 0px rgba(68, 88, 144, 0.2);
+  margin-top: 30px;
 }
 
-.contact .php-email-form .form-group {
+.contact form .form-group {
   padding-bottom: 40px;
   margin: 0px 200px 0px;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact form input,
+.contact form textarea {
   border-radius: 15px;
   border: none;
   box-shadow: 0px 3px 25px 0px rgba(68, 88, 144, 0.2);
   font-size: 14px;
+  border-color: #000;
 }
 
-.contact .php-email-form input {
+.contact form input {
   height: 40px;
+  width: 380px;
+}
+
+.contact form textarea {
+  height: 150px;
   width: 380px;
 }
 
@@ -80,26 +89,30 @@ body {
   display: flex;
 }
 
-.col {
+.button {
+  /* Para posicionar os botões na mesma posição dos campos de texto */
+  /* mesmo tamanho que os elementos do rótulo */
   justify-content: center;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
-.col button {
+
+.button button {
   border: 0;
-  padding: 10px 32px;
+  padding: 15px 80px;
   color: #00a8cc;
   transition: 0.4s;
   border-radius: 50px;
   border: 2px solid #00a8cc;
   background: #fff;
-  margin: 0px 90px 0px;
+  margin: 30px 90px 0px;
   cursor: pointer;
   text-decoration: none;
 }
 
-.col button:hover {
+.button button:hover {
   background: #00a8cc;
   color: #fff;
 }
