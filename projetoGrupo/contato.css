@@ -90,8 +90,6 @@ body {
 }
 
 .button {
-  /* Para posicionar os botões na mesma posição dos campos de texto */
-  /* mesmo tamanho que os elementos do rótulo */
   justify-content: center;
   display: flex;
   flex-direction: row;
